@@ -1,6 +1,6 @@
 # COMMANDS
-DOCKER_COMMAND=sudo docker
-NVIDIA_DOCKER_COMMAND=sudo nvidia-docker
+DOCKER_COMMAND=docker
+NVIDIA_DOCKER_COMMAND=nvidia-docker
 DOCKER_FILE=Dockerfile
 SVC=pytorch-opencv4-py3
 VERSION=latest

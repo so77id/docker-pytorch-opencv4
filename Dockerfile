@@ -2,12 +2,14 @@ FROM pytorch/pytorch:latest
 MAINTAINER Miguel Rodriguez <m.rodriguezs1990@gmail.com>
 
 # Dependencies
+RUN apt-get update
+RUN apt-get install -y libglib2.0-0 cmake
 
 # Opencv
 RUN pip install opencv-python
 
 # Py libraries
-# RUN pip install dlib
+RUN pip install dlib
 RUN pip install imutils
 RUN pip install h5py
 RUN pip install urllib3
@@ -18,6 +20,7 @@ RUN pip install scikit-learn
 
 
 # pyTorch plugins
+RUN pip install torchvision
 RUN pip install sp
 RUN pip install dgl
 RUN pip install tensorboardX
@@ -28,10 +31,9 @@ RUN pip install skorch
 RUN pip install jupyterlab
 RUN pip install tqdm
 RUN pip install slackclient
+RUN pip install pandas
 # RUN pip install moviepy requests imageio==2.4.1
 # RUN python3 -c 'import moviepy.editor as mpy'
-
-
 
 
 CMD ["/bin/bash"]
