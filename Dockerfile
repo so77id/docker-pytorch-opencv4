@@ -34,7 +34,7 @@ RUN pip install slackclient
 RUN pip install pandas
 # RUN pip install moviepy requests imageio==2.4.1
 # RUN python3 -c 'import moviepy.editor as mpy'
-
+RUN pip install tensorboard
 
 
 CMD ["/bin/bash"]
