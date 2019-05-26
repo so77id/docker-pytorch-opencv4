@@ -3,7 +3,7 @@ MAINTAINER Miguel Rodriguez <m.rodriguezs1990@gmail.com>
 
 # Dependencies
 RUN apt-get update
-RUN apt-get install -y libglib2.0-0 cmake
+RUN apt-get install -y libglib2.0-0 cmake libsm6 libxext6 libxrender-dev
 
 # Opencv
 RUN pip install opencv-python
@@ -34,6 +34,7 @@ RUN pip install slackclient
 RUN pip install pandas
 # RUN pip install moviepy requests imageio==2.4.1
 # RUN python3 -c 'import moviepy.editor as mpy'
+
 
 
 CMD ["/bin/bash"]
