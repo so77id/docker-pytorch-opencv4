@@ -36,5 +36,9 @@ RUN pip install pandas
 # RUN python3 -c 'import moviepy.editor as mpy'
 RUN pip install tensorflow
 
+RUN pip install python-dotenv
+RUN pip install pydot
+RUN pip install requests
+
 
 CMD ["/bin/bash"]
