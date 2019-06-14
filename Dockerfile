@@ -40,7 +40,9 @@ RUN pip install python-dotenv
 RUN pip install pydot
 RUN pip install requests
 
+RUN apt-get install -y ffmpeg
 RUN pip install librosa
+
 
 
 CMD ["/bin/bash"]
