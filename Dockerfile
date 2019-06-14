@@ -40,5 +40,7 @@ RUN pip install python-dotenv
 RUN pip install pydot
 RUN pip install requests
 
+RUN pip install librosa
+
 
 CMD ["/bin/bash"]
