@@ -47,6 +47,6 @@ RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-a
 
 RUN git clone https://github.com/so77id/torch_videovision.git
 
-ENV PYTHONPATH=$PYTHONPATH:/torch_videovision
+ENV PYTHONPATH=$PYTHONPATH:/workspace/torch_videovision
 
 CMD ["/bin/bash"]
