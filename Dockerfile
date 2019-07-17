@@ -45,5 +45,8 @@ RUN pip install librosa
 
 RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
+RUN git clone https://github.com/so77id/torch_videovision.git
+
+ENV PYTHONPATH=$PYTHONPATH:/torch_videovision
 
 CMD ["/bin/bash"]
