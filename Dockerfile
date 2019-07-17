@@ -36,5 +36,6 @@ RUN pip install pandas
 # RUN python3 -c 'import moviepy.editor as mpy'
 RUN pip install tensorflow
 
+RUN pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 CMD ["/bin/bash"]
