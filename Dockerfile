@@ -36,6 +36,14 @@ RUN pip install pandas
 # RUN python3 -c 'import moviepy.editor as mpy'
 RUN pip install tensorflow
 
+RUN pip install python-dotenv
+RUN pip install pydot
+RUN pip install requests
+
+RUN apt-get install -y ffmpeg
+RUN pip install librosa
+
 RUN pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+
 
 CMD ["/bin/bash"]
