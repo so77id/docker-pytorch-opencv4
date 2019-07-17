@@ -43,7 +43,7 @@ RUN pip install requests
 RUN apt-get install -y ffmpeg
 RUN pip install librosa
 
-RUN pip3 install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
+RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
 
 CMD ["/bin/bash"]
