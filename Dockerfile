@@ -51,6 +51,8 @@ RUN pip uninstall -y torchvision
 RUN pip install https://download.pytorch.org/whl/cu100/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
 RUN pip install https://download.pytorch.org/whl/cu100/torchvision-0.3.0-cp36-cp36m-linux_x86_64.whl
 
+RUN pip install torchaudio -f https://download.pytorch.org/whl/torch_stable.html
+
 RUN git clone https://github.com/so77id/torch_videovision.git
 
 ENV PYTHONPATH=$PYTHONPATH:/workspace/torch_videovision
