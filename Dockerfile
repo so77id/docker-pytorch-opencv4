@@ -45,15 +45,11 @@ RUN pip install librosa
 
 RUN pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
 
-
-RUN pip uninstall -y torch
-RUN pip uninstall -y torchvision
-RUN pip install https://download.pytorch.org/whl/cu100/torch-1.1.0-cp36-cp36m-linux_x86_64.whl
-RUN pip install https://download.pytorch.org/whl/cu100/torchvision-0.3.0-cp36-cp36m-linux_x86_64.whl
-
 RUN pip install torchaudio -f https://download.pytorch.org/whl/torch_stable.html
 
 RUN git clone https://github.com/so77id/torch_videovision.git
+
+RUN pip install facenet-pytorch
 
 ENV PYTHONPATH=$PYTHONPATH:/workspace/torch_videovision
 
