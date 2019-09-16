@@ -51,6 +51,8 @@ RUN git clone https://github.com/so77id/torch_videovision.git
 
 RUN pip install facenet-pytorch
 
+RUN pip install pretrainedmodels
+
 ENV PYTHONPATH=$PYTHONPATH:/workspace/torch_videovision
 
 CMD ["/bin/bash"]
