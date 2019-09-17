@@ -53,6 +53,8 @@ RUN pip install facenet-pytorch
 
 RUN pip install pretrainedmodels
 
+RUN pip install future
+
 ENV PYTHONPATH=$PYTHONPATH:/workspace/torch_videovision
 
 CMD ["/bin/bash"]
